@@ -19,7 +19,9 @@ A lightweight and responsive web application built with HTML, CSS, and JavaScrip
 - JavaScript (Vanilla)
 
 ## How to Run
-Simply clone this repository or download the files and open `index.html` in any web browser.
+Simply clone this repository or download the files and open 
+[https://muhammadzaid-kh.github.io/Even-Odd-Checker/]
+`index.html` in any web browser.
 
 ---
 *Built with passion to learn web development.*
