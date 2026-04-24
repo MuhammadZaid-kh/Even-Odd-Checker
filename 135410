@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Even/Odd Checker</title>
+    <style>
+        .main{
+            border: 1px solid #ccc;
+            width: 90%;
+            max-width: 300px;
+            padding: 20px;
+            margin: 20px auto;
+        }
+        input {
+            border-radius: 12px;
+            padding-left: 5px;
+            border: 1px solid #ccc;
+        }
+        button{
+            border-radius: 12px;
+            background: slateblue;
+            color: white;
+            border: none;
+        }
+        #result{
+            font-size: 12px;
+            color: red;
+            font-family: monospace;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h3>Even/Odd Check</h3>
+        <input type ="text" id="userInput" placeholder="Enter number only">
+        <button onclick="myFun()">Check</button>
+        <div id="result"></div>
+    </div>
+  
+  
+  <script>
+      function myFun(){
+          let number = document.getElementById("userInput").value;
+          
+          if(number == ""){
+                       document.getElementById("result").innerHTML = "Error! please enter a number first";
+          }else if(number % 2 === 0){
+        document.getElementById("result").innerHTML = number + " is <mark>Even</mark> number";
+          }
+          else if(number % 2 === 1){
+             document.getElementById("result").innerHTML = number + " is <mark>Odd</mark> number";
+      }else {
+          document.getElementById("result").innerHTML = "Enter valid number";
+      }
+      }
+      
+      
+      
+  </script>
+  
+</body>
+</html>
